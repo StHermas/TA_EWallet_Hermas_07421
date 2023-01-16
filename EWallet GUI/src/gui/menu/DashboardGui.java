@@ -13,25 +13,25 @@ public class DashboardGui extends MainFrame {
     private JButton orderBtn, historyBtn, profilBtn, logOutBtn;
 
     public DashboardGui(){
-        super("Menu E-Wallet Kizuna", 400, 600);
+        super("Menu", 400, 600);
     }
 
     @Override
     protected void component() {
-        titleLabel = new JLabel("Selamat Datang");
+        titleLabel = new JLabel("Ewallet Kizuna");
         setFontSize(titleLabel, 30);
         setFontStyle(titleLabel,Font.BOLD);
         setFontFamily(titleLabel, "Finger Paint");
         boundedAdd(titleLabel, 38, 30, 351, 92);
 
-        ImageIcon imglLoad = loadImage("src/assets/gigachadl.jpg", 180, 180);
+        ImageIcon imglLoad = loadImage("src/assets/gigachad1.jpg", 90, 90);
         iconlLabel = new JLabel(imglLoad);
-        boundedAdd(iconlLabel, 10, 312, 90, 90);
+        boundedAdd(iconlLabel, 5, 327, 90, 90);
 
 
-        ImageIcon imgrLoad = loadImage("src/assets/gigachad2.jpg", 180, 180);
+        ImageIcon imgrLoad = loadImage("src/assets/gigachad2.jpg", 90, 90);
         iconrLabel = new JLabel(imgrLoad);
-        boundedAdd(iconrLabel, 301, 312, 90, 90);
+        boundedAdd(iconrLabel, 299, 312, 90, 90);
 
         orderBtn = new JButton("Pesanan");
         orderBtn.setBackground(color("#808080"));
@@ -47,7 +47,7 @@ public class DashboardGui extends MainFrame {
         historyBtn.setFocusPainted(false);
         boundedAdd(historyBtn, 108, 282, 185, 50);
 
-        profilBtn = new JButton("Pesanan");
+        profilBtn = new JButton("Profil");
         profilBtn.setBackground(color("#808080"));
         profilBtn.setForeground(color("#FFFFFF"));
         setFontFamily(profilBtn, "Iceberg");
@@ -66,15 +66,15 @@ public class DashboardGui extends MainFrame {
     @Override
     protected void event() {
         orderBtn.addActionListener((event)->{
-            //new NewOrderGui().setVisible(true);
+            new NewOrderGui().setVisible(true);
             dispose();
         });
         historyBtn.addActionListener((event)->{
-            //new HistoryGui().setVisible(true);
+            new HistoryGui().setVisible(true);
             dispose();
         });
         profilBtn.addActionListener((event)->{
-            //new SettingProfilGui().setVisible(true);
+            new SettingProfilGui().setVisible(true);
             dispose();
         });
         logOutBtn.addActionListener((event)->{

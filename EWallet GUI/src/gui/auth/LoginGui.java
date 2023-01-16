@@ -27,8 +27,7 @@ public class LoginGui extends MainFrame {
         iconLabel = new JLabel(imgLoad);
         boundedAdd(iconLabel, 110, 130, 195, 195);
 
-        titleLabel = new JLabel("Selamat Datang" +
-                "Di Ewallet Kizuna");
+        titleLabel = new JLabel("Selamat Datang");
 
         setFontSize(titleLabel, 30);
         setFontStyle(titleLabel,Font.BOLD);
@@ -60,7 +59,7 @@ public class LoginGui extends MainFrame {
         masukBtn.setFocusPainted(false);
         boundedAdd(masukBtn, 157, 454, 95, 30);
 
-        daftarBtn = new JButton("Daftar Disini");
+        daftarBtn = new JButton("Daftar");
         masukBtn.setBackground(color("#808080"));
         masukBtn.setForeground(color("#FFFFFF"));
         setFontFamily(daftarBtn, "Iceberg");

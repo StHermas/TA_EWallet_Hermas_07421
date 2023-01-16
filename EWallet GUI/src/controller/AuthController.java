@@ -19,7 +19,7 @@ public class AuthController {
             UserModel.registerUser(userBaru);
             return true;
         }
-        return true;
+        return false;
     }
     public String loginProccess(String username, String password){
         UserEntity userEntity = UserModel.findUsername(username);
@@ -35,6 +35,7 @@ public class AuthController {
         UserModel.updateProfil(profilBaru);
         return true;
     }
+
     public UserEntity findUser(String username){
         return UserModel.findUsername(username);
     }

@@ -19,7 +19,7 @@ public class RegisterGui extends MainFrame{
     @Override
     protected void component() {
         //Icon
-        ImageIcon imgLoad = loadImage("src/assets/imagesregister.png", 180, 180);
+        ImageIcon imgLoad = loadImage("src/assets/imagesregister.png", 100, 106);
         iconLabel = new JLabel(imgLoad);
         boundedAdd(iconLabel, 292, 464, 100, 106);
         //Icon
@@ -71,7 +71,7 @@ public class RegisterGui extends MainFrame{
         daftarBtn.setForeground(color("#FFFFFF"));
         setFontFamily(daftarBtn, "Iceberg");
         daftarBtn.setFocusPainted(false);
-        boundedAdd(daftarBtn, 157, 454, 95, 30);
+        boundedAdd(daftarBtn, 157, 509, 95, 30);
 
     }
 
